@@ -1,0 +1,40 @@
+#redPrvi {
+    margin-top: 20px;
+}
+
+#btngrp {
+    text-align: right;
+
+}
+
+.pozadina{
+    padding-top: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: aquamarine;
+    position: relative;
+;
+}
+
+table {
+  text-align: center ;
+  width: 700px;
+  height: 200px;
+}
+
+tr {
+    background-color: cornflowerblue;
+}
+th, td {
+    border:1px solid black;
+    width: 80px;
+    height: 40px;
+    
+}
+
+th {
+    font-weight: bold;
+}
+

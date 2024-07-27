@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+ 
+    <h1>Igra sabiranja</h1>
+    <form name = "mojaForma">
+        Nivo: <input type="range" name="nivo" id="nivo" min= "1" max = "5">
+        Negativni brojevi: <input type = "checkbox" name = "negativni" id = "negativni">
+        <br>
+    </form>
+    <button onclick= "igrajIgru()"> Igraj igru </button>
+    <hr>
+
+    <h1> Nizovi</h1>
+    Ime: <input type = "text" id = "ime"> <br>
+    <button onclick="dodajIme()"> Dodaj</button>
+
+    <h1> Rezultati </h1>
+    <div id = "rezultati">
+
+        100,200
+    </div>
+
+    <div id = "imena">
+        
+    </div>
+
+    <h1> Stoperica </h1>
+    <button onclick = "zapocni()">  Zapocni </button>
+    <button onclick = "zaustavi()"> zaustavi </button>
+    <div id = "vreme">0</div>
+</body>
+</html>

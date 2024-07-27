@@ -1,0 +1,53 @@
+.oiviceno {
+    border-color: lightslategray;
+    border-style: dashed;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.izbor {
+    margin-left: 10px;
+}
+
+.heder {
+    background-color: black;
+    color: white;
+}
+
+.c-kod {
+    border: 5px solid deeppink;
+    color: deeppink;
+    background-color: black;
+}
+
+.linkovi {
+    color: deeppink;
+    background-color: black;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.prvi-podnaslov {
+    font-weight: bold;
+}
+
+.podnaslovi {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.unosi {
+    width: 100%;
+}
+
+.linije {
+    color: pink;
+}
+
+.dugme-prijava {
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+}

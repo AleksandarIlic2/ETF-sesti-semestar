@@ -1,0 +1,106 @@
+:<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="zadatak1.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            
+            <div class="col-sm-12 col-lg-12 alert alert-secondary" id="pocetna">
+                
+                    <h1 class="navbar-brand" id="naslov">Agencija za nekretnine</h1>
+                </nav>
+            </div>
+
+
+        </div>
+
+        <div class="row" style="margin-bottom: 15px;">
+
+            <div class="col-sm-4 " id="kolona">
+                <div class="border border-2">
+                    <img class="slika" src ="slika1.jpg" alt ="smestaj">
+                    <p style="font-size: large; font-weight: bold;margin-bottom: 0%;">Vila LUX</p>
+                    <p>Super je!</p>
+                </div>
+            </div>
+
+            <div class="col-sm-4 " id="kolona">
+                <div class="border border-2">
+                    <img class="slika" src ="slika2.jpg" alt ="smestaj">
+                    <p style="font-size: large; font-weight: bold;margin-bottom: 0%;">Vila LUX</p>
+                    <p>Super je!</p>
+                </div>
+            </div>
+
+            <div class="col-sm-4 " id="kolona">
+                <div class="border border-2">
+                    <img class="slika" src ="slika3.jpg" alt ="smestaj">
+                    <p style="font-size: large; font-weight: bold;margin-bottom: 0%;">Vila LUX</p>
+                    <p>Super je!</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class =" col-sm-12 alert alert-warning" id="polje">
+                
+                <p style="text-align: center;">Provera agencija za nekretnine, sa holjadama zadovoljnih kupaca.</p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-lg-4 mx-auto">
+                <table class="moja-tabela"> 
+                    <tr>
+                        <td> <label for="ime">Ime:</label></td>
+                        <td> <input type="text" id="ime"></td>
+                    </tr>
+        
+                    <tr>
+                        <td> <label for ="prezime">Prezime:</label></td>
+                        <td> <input type="text" id="prezime"></td>
+                    </tr>
+        
+                    <tr>
+                        <td> <label for="opcije">Grad:</label></td>
+                        <td>  <select name ="opcije">
+                            <option>Beograd</option>
+                            <option>Novi Sad</option>
+                            <option>PAncevo</option>
+                        </select></td>
+                    </tr>
+        
+                    <tr>
+                        <td> <label for="nekretnina">Vrsta<br> nekretnine:</label></td>
+                        <td> <ul type="none">
+                            <li><input type ="radio" name="nekretnina">Kuca</li>
+                            <li><input type ="radio" name="nekretnina">Stan</li>
+                        </ul></td>
+                    </tr>
+
+                    <tr>
+                       <td colspan="2" class="btn-wrapper">
+                        <button class="btn moje-dugme">Trazi</button>
+                       </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+
+
+    </div>
+    
+</body>
+</html>

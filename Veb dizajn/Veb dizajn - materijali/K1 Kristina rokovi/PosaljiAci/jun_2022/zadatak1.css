@@ -1,0 +1,30 @@
+a{
+    color: deeppink;
+}
+a#ucionica{
+    color: white;
+    text-decoration: none;
+}
+
+div#levo{
+    background-color: black;
+    color: deeppink;
+    border: 3px solid deeppink;
+    margin: 5px;
+}
+
+.moj-hr{
+    border: 2px deeppink solid;
+}
+
+div[name="dugme"]{
+    display: flex;
+}
+h1{
+    display: flex;
+    width: 100%;
+}
+
+.inputi{
+    width:100%;
+}

@@ -1,0 +1,68 @@
+
+#body-uputstvo {
+    background-color: slateblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+#pasus {
+    font-size: large;
+    text-align: center;
+}
+
+#podesavanja {
+    margin: auto;
+    width: 35%;
+    border: 5px solid black;
+    padding: 20px;
+}
+
+#podesavanja-unutra {
+    margin: auto;
+    width: 80%;
+}
+
+#dugmici {
+    margin: auto;
+    width: 20%;
+    border: 2px black;
+}
+
+
+#body-igra {
+    text-align: center;
+    background-color: slateblue;
+}
+
+#rezultat {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#listarez {
+    font-size: large;
+    text-align: center;
+    margin: auto;
+    width: 35%;
+}
+
+#poruka {
+    text-align: center;
+}
+
+#body-rezultati {
+    background-color: slateblue;
+}
+
+#prethodna {
+    font-size: larger;
+}
+
+#lista {
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;    
+}
+

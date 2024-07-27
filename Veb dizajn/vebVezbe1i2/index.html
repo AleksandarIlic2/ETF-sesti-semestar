@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href = "style.css" rel = "stylesheet" type = "text/css">
+</head>
+<body>
+    <a href = "http://www.etf.bg.ac.rs" target = "_blank"> <h2> Naslov 2 </h2> </a>
+    <img src = "slike/Screenshot 2024-04-05 193531.png" alt = "Slika sa desktopa"
+        width = "250px" height="250px"
+    >
+    <table border = 1>
+        <caption> Naslov tabele </caption>
+        <tr> 
+            <th> Ime </th>
+            <th> Prezime </th>
+            <th> Mejl</th> 
+            <th colspan = "2"> Datum rodjenja</th>
+        </tr>
+        <tr>
+            <td> Pera </td>
+            <td> Peric </td>
+            <td> pera@gmail.com </td>
+            <td> 12.12.</td>
+            <td> 1995 </td>
+        </tr>
+        <tr>
+            <td rowspan = 2> Mika </td>
+            <td rowspan = 2> Mikic </td>
+            <td> mika@gmail.com </td>
+            <td rowspan = 2> 12.12.</td>
+            <td rowspan = 2> 1995 </td>
+        </tr>
+        <tr>       
+            <td> mika12@gmail.com </td>           
+        </tr>
+     
+
+    </table>
+    <p id = "idP"> idP</p>
+    <p class = "p1">p p1 </p>
+    <div class = "p1">div p1 </div>
+    <br>
+
+    <table border = 1>
+        <tr>
+            <td> Kol1 </td>
+            <td> Kol2 </td>
+            <td> Kol3 </t>
+        </tr>
+        <tr>
+            <td rowspan = 2> 2.1 </td>
+            <td rowspan = 2> 2.2 </td>
+            <td> 2.3 </td>
+        </tr>
+        <tr>
+            <td> 2.3.2 </td>
+        </tr>
+        <tr> 
+            <td> normalan </td>
+            <td colspan = 2 rowspan = 2> prosiren </td>
+        </tr>
+        <tr>
+            <td> normalan </td>
+        </tr>
+    </table>
+
+    <hr> 
+
+    <form>
+        Text: <input type = "text", name = "polje1" 
+        placeholder= "Unesite polje" size = "5" disabled>
+        <br>
+        Lozinka: <input type = "password" autofocus required maxlength="5" minlength="3">
+        <br>
+        <input type = "button" value = "Button">
+        <input type = "submit" value = "Submit">
+        <input type = "reset" value = "Reset">
+        <br>
+        Pol: <input type = "radio" name = "Pol" id = "pol1"><label for = "pol1"> M </label> 
+         <input type = "radio" name = "Pol" id = "pol2"> <label for = "pol2"> Z </label>
+        <br>
+        Omiljeni dan: <input type = "checkbox" id = "prvi"> <label for = "prvi"> Ponedeljak </label>
+        <input type = "checkbox"  id = "sesti" > <label for = "sesti"> Subota </label>
+        Drzava:
+        <select size = "3" multiple>
+            <option> Srbija </option>
+            <option> BiH </option>
+            <option selected> Makedonija </option>
+        </select>
+        <textarea rows = "5" cols = "50"> </textarea>
+        <fieldset>
+            <legend> HTML 5 elementi </legend>
+            <input type = "color">
+            <input type = "date">
+            <input type = "time">
+            <input type = "week">
+            <input type = "range" min = 1 max = 2>
+            <input type = "email">
+        </fieldset>
+       
+    </form>
+
+</body>
+</html>

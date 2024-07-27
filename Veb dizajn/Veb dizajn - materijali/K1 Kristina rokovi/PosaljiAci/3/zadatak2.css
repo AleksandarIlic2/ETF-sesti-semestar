@@ -1,0 +1,9 @@
+.form-row > label {
+    text-align: left;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    margin-bottom: 3px;
+}

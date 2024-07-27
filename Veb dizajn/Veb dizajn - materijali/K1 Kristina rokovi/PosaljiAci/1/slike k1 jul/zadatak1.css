@@ -1,0 +1,66 @@
+div#pocetna{
+    background-color:  #61605E;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+h1#naslov{
+    color: #FFC433;
+    font-size:xx-large;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.slika{
+    width: 100%;
+    margin-bottom: 5px;
+    
+}
+
+div#polje{
+    background-color: #FFC433;
+    height: 50px;
+    padding-top: 13px;
+}
+
+
+
+
+
+.moja-tabela td{
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+.moja-tabela td:first-child {
+    text-align: left; /* Prva kolona poravnata u levo */
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.moja-tabela td:last-child {
+    text-align: center; /* Druga kolona poravnata na sredini */
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.moja-tabela tr:nth-child(2n){
+    background-color: white;
+    
+}
+.moja-tabela tr:nth-child(2n+1){
+    background-color: rgb(223, 226, 230);
+}
+
+.moje-dugme{
+    background-color: #FFC433;
+    border: 2px black solid;
+    font-weight: bold;
+   
+}
+.btn-wrapper{
+    text-align: center;
+}
+.moje-dugme:hover{
+    background-color: chocolate;
+}

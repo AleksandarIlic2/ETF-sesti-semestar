@@ -1,0 +1,46 @@
+#btngrp {
+    text-align: right;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+#gornji {
+    margin: 10px;
+}
+
+#srednji {
+    margin: 10px;
+}
+
+#gornjiMain {
+    padding: 20px;
+    background-color:cyan;
+}
+
+#leviMain {
+    background-color:lightblue;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+#desniMain {
+    background-color:lightblue;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+#srednjiMain {
+    margin: 20px;
+    color: blue;
+}
+
+#dug {
+    align-self: right;
+}
+
+.table {
+    background-color: lightblue;
+    border-color: black;
+}

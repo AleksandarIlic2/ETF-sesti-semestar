@@ -1,0 +1,27 @@
+#prvi {
+    background-color: lightgreen;
+    text-align: center;
+    font-weight: bold;
+}
+
+#slike {
+    margin: 20px;
+    width: 100%;
+}
+
+#treci {
+    background-color: green;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+}
+
+.tri {
+    text-align: center;
+}
+
+.belo {
+    background-color: white;
+}

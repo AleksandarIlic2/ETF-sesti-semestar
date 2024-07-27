@@ -1,0 +1,35 @@
+a#pocetna{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.page-link{
+    font-weight:normal;
+}
+
+table{
+    background-color: lightblue;
+    border: 1px solid darkslategrey;
+   justify-content: center;
+    margin-bottom: 10px;
+}
+
+td, tr,th{
+    border: 1px solid darkslategrey;
+    border-collapse: collapse;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.custom-hr{
+    
+ 
+    border: 2px lightblue solid;
+}
+
+.flex-row{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,37 @@
+#header {
+    text-align: center;
+    font-size: 50pt;
+    font-style: oblique;
+    background-color: whitesmoke;
+    padding: 40px;
+    border-width: 2px;
+    border-color: blue;
+    border-style:groove;
+}
+
+h1 {
+    color: darkgray;
+    font-weight: bold;
+}
+
+#dugme {
+    background-color: rgb(5, 69, 69);
+    margin: 10px;
+    padding: 4px;
+}
+
+#main {
+    margin-top: 20px;
+}
+
+#tekstUDugmetu {
+    color: white;
+}
+
+#pro {
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}

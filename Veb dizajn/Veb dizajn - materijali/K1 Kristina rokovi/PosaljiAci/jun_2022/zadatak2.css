@@ -1,0 +1,16 @@
+
+.moja-tabela td:first-child{
+    width: 80%;
+    text-align: center;
+
+}
+
+.moja-tabela td:last-child{
+    width: 80%;
+    text-align: center;
+}
+
+
+.btn-wrapper{
+    text-align: center;
+}

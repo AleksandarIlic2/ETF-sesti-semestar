@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="zadatak1.css">
+    <title>Kolokvijum</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row oiviceno">
+            <div class="col-sm-12 heder">
+                <h1>Moj blog</h1>
+                <ul class="breadcrumb izbor">
+                    <li class="breadcrumb-item"><a href="#" class="linkovi">2022</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="linkovi">Jun</a></li>
+                    <li class="breadcrumb-item active" style="color: white;">Učionica</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-12 c-kod">
+                    <p>#include &lt;stdio.h&gt;</p>
+                    <p>int main() {</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;printf("Lako i brzo!");</p>
+                    <p>}</p>
+                </div>
+                <div class="col-lg-9 col-sm-12 text-center">
+                    <form action="#">
+                        <h1>Učionica</h1>
+                        <kbd>Nauči programiranje lako i brzo! Prijavi se!</kbd>
+                        <hr class="linije">
+                        <label for="unos-imena" class="prvi-podnaslov">Ime i prezime</label>
+                        <input type="text" name="unos-imena" class="unosi">
+                        <label for="unos-datuma" class="podnaslovi">Datum rođenja</label>
+                        <input type="date" name="unos-datuma" class="unosi" placeholder="mm/dd/yyyy">
+                        <label for="pol" class="podnaslovi">Pol</label>
+                        <br>
+                        <label for="pol-M">M</label>
+                        <input type="radio" name="pol" id="pol-M">
+                        <label for="pol-Z">Z</label>
+                        <input type="radio" name="pol" id="pol-Z">
+                        <br>
+                        <label for="telefon" class="podnaslovi">Broj telefona</label>
+                        <input type="text" name="telefon" class="unosi"> 
+                        <hr class="linije">
+                        <input type="submit" value="Prijavi se" class="dugme-prijava">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

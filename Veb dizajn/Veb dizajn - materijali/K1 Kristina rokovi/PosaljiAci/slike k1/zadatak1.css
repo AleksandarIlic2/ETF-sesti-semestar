@@ -1,0 +1,28 @@
+
+.moja-tabela td{
+    width: 50%;
+
+}
+
+.moja-tabela td:first-child{
+    text-align: left;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.moja-tabela td:last-child{
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+
+.btn-wrapper{
+    text-align: center;
+}
+
+button#moje-dugme{
+    background-color: chocolate;
+    font-weight: bold;
+    border: 2px solid black;
+}

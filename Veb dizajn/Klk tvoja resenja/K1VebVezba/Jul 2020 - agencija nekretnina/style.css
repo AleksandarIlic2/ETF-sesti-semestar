@@ -1,0 +1,45 @@
+#navbar1 {
+    margin-top: 20px;
+    color: #FFC433;
+    background-color:#61605E ;
+    text-align: center;
+    height: 100px;
+    padding-top: 25px;
+    font-size:xx-large;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#srednjiDeo {
+    padding: 10px;
+
+}
+
+
+
+table {
+  /*  border:1px solid black;*/
+    margin-top: 20px;
+    margin-left:35%;
+    margin-right: 35%;
+    width: 80px;
+    height: 100px;
+}
+
+
+#bt {
+
+    font-weight: bold;
+    background-color: orange;
+    border: 3px solid #61605E;
+}
+
+#bt:hover{
+    background-color: chocolate;
+}
+
+img {
+    width: 100%;
+}

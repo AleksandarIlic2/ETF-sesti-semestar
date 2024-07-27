@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uputsvo za igru</title>
+    <link rel="stylesheet" href="stil.css">
+    <script src="skripta.js"></script>
+</head>
+<body id="body-uputstvo">
+    <h1>Uputstvo za igricu zmijice</h1>
+    <p id="pasus"> U igri „Zmijica“ igrač koristi tastere sa strelicama da pomera zmiju po tabli sa poljima. Kako zmija
+        dolazi u dodir sa hranom, ona je jede i time raste za jedan članak. Na svakih deseti sekundi, na tabli se na nasumicnoj lokaciji pojavljuje 
+        "super hrana" koja ostaje na tabli nekoliko sekundi pre nego sto nestane sa table. Ukoliko igrac uspe da pojede 
+        "super hranu" pre nego sto ona nestane, igrac ostvaruje 10 poena. Igra se završava kada se zmija
+        sudari sa ivicama ekrana ili sa sobom. Cilj igre je da zmija postane što veća pre nego što se to
+        dogodi.</p>
+        <br>
+    <div id="podesavanja">
+        <div id="podesavanja-unutra">
+            <h2>Panel sa podesavanjima</h2>
+            Izaberite velicinu table: 
+            <input type="radio" name="veltab" id="velicina1" value = "20">20x20
+            <input type="radio" name="veltab" id="velicina2" value = "25">25x25 
+            <input type="radio" name="veltab" id="velicina3" value = "35">35x35
+
+            <br>
+            <br>
+
+            Izaberite nivo igrice:
+            <input type="radio" name="nivo" id="nivo1" value = "1"> Lak
+            <input type="radio" name="nivo" id="nivo2" value = "2">Srednji 
+            <input type="radio" name="nivo" id="nivo3" value = "3">Tezak
+     
+        </div>
+    </div>
+     <br>
+     <br>
+     <div id="dugmici">
+        <button onclick="skokNaIgru()" id="dugme1">Otpocnite igru</button>
+        <button onclick="skokNaRezultate()" id="dugme2">Skocite na rezultate</button>
+     </div>
+</body>
+</html>

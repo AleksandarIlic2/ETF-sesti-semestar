@@ -1,0 +1,21 @@
+.moja-tabela{
+    margin: auto;
+}
+
+.moja-tabela td{
+    width: 50%;
+    text-align: left;
+}
+
+.moja-tabela tr:nth-child(odd){
+    background-color: rgb(236, 238, 240);
+}
+
+.moja-tabela tr:nth-child(even){
+    background-color: white;
+}
+
+.moja-tabela td{
+    padding: 3px;
+    margin: 3px;
+}

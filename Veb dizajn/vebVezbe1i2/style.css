@@ -1,0 +1,24 @@
+table{
+    background-color: blue;
+    color: red
+}
+
+#idP {
+    color: green
+}
+
+.p1{
+    color:purple
+}
+
+a[href = "http://www.etf.bg.ac.rs"]{
+color:red
+}
+
+div p{
+
+}
+
+div img.slika1{
+
+}

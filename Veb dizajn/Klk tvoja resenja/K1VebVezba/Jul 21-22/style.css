@@ -1,0 +1,25 @@
+
+
+#navbar1 {
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+#navbar2 {
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.col-sm-4{
+    margin-left: auto;
+    margin-right: auto;
+}
+

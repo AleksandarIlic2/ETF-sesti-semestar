@@ -1,0 +1,126 @@
+h1{
+    text-align: center;
+    color:red
+}
+
+#test{
+    color:orange !important
+}
+
+
+.naslov {
+    background-color: black;
+    color: white !important
+}
+
+#pozadina{
+    height: 100px;
+    width: 80%;   
+    margin:auto;
+    background-image: url(slika.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+
+}
+
+h1{
+    text-decoration: underline;
+    text-transform:lowercase;
+    letter-spacing: 10px;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: italic;
+}
+
+a:link{
+text-decoration: none;
+color:black;
+font-size:20px;
+
+}
+
+a:hover, a:active{
+ font-weight: bold;   
+ text-decoration: underline;
+}
+
+
+a:active{ /*active je kad stisnes dok ne pustis i DA PRVO SE DEFINISE link pa visited pa hover pa active (imas na prez kako je to zapravo sta mora posle cega)*/
+    color: gray
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse; /*ovo ti sluzi da stopi sve linije oko svakog pojedinacnog polja u normalnu tabelu*/
+
+}
+
+th, td {
+   /* border-width: 3px;
+    border-style: solid;
+    border-color:black;*/
+    border: 4px solid black; /*ova linija zamenjuje tri iznad POD uslovom da navedes u tom redosledu ili pisi ove tri naredbe gore*/
+    padding: 15px; /*padding odvaja u okviru svake celije, a u odnosu na druge elemente html stranice bi bio margin*/
+}
+
+th{
+    height: 50px;
+    font-size: 20px
+}
+/*n krece od nula da znas a imas i ove odd, even predefinisano*/
+tr:nth-child(odd){
+    background-color: bisque
+}
+
+tr:nth-child(even){
+    background-color: aqua
+}
+
+tr:nth-child(n + 2):hover{
+    background-color:  brown; /*hover nije samo za linkove, moze i za sve druge elemente! */
+}
+
+/*nije morao da se zove flex-container nebitno je ime klase*/
+.flex-container{
+    display: flex; /*svaki unutrasnji element u okviru spoljasnjeg diva poslate flex element, zbog ove linije
+    ti unutrasnji divovi nisu vise divovi nego sad postuju ta flex pravila i recimo vise ne zauzimaju celu liniju nego
+    idu jedan do drugog - postaju inline*/
+    background-color: coral;
+    flex-direction: row; /*evo sad sekcije idu jedna ispod drugo ako stavimo column*/
+    flex-wrap: wrap; /*prelama sam sadrzaj unutar kontejnera na vise redova tako da svi elementi imaju svoju fiksnu dimenziju
+    ako ces da ipak stane sve u jedan red stavi no-wrap
+     */
+    justify-content: center; /*poravnaj sve elemente unutar kontejnera na sredinu, recimo ako u prvom redu imas 6 i staje tacno 
+    6 elemenata po redu a u drugom redu imas jos 3 elementa oni ce da budu onako na centru umesto sa leve strane da krenu*/
+
+}
+
+.flex-container > div {
+    width: 100px;
+    font-size: 30px;
+    padding: 20px;
+    margin: 10px;
+    background-color: lightblue;
+}
+/*mozes da menjas sam redosled ovih itema sto se nalaze u flex-containeru, gde nemoj da shvatis da su ovo 1,2,3 samo 
+neki divovi u kojima pise 1,2,3 to mogu biti komplesne stvari tipa 1 moze biti padajuci meni 2 nesto drugo itd*/
+/*i da dovoljno ti je da napises samo #prvi #drugi #treci tj po id dovoljno je pametan da prepozna da se radi o flex elementu
+posto je u flex containeru*/
+#prvi {
+    order:2;
+    flex-grow: 6; /*koliki deo visine/sirine sadrzi taj element, izrazeno je u nekim jacinama od 1 pa na dalje (0 je difolt,
+    oznacava se samo prilagodi sirini ekrana*/
+}
+#drugi{
+    order:3;
+    flex-grow: 3; /*flex grow je znatno bolji od procenata ili piksela jer ce sad na bilo kom ekranu #prvi biti 2 puta veci od #drugi
+    i #treci, to moze i sa procentima al ako imas 9 elementata u kontejneru problem je sto 100% ne mozes da podelis sa tacno 9
+    a sami pikseli su problem naravno zbog razlicitih velicina ekrana
+    */
+}
+#treci{
+    order:1;
+    flex-grow:3;
+}

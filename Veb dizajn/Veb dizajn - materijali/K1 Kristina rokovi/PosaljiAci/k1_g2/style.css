@@ -1,0 +1,80 @@
+
+.navbar-brand{
+    color: #5E5E5E;
+    font-size: 28px;
+}
+
+.container-fluid#header{
+    background-color: lightgreen;
+}
+
+.container-fluid#footer{
+    background-color: lightgreen;
+   
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 3px;
+    font-weight: bold;
+    border-bottom: 1px solid darkslategray;
+}
+
+table{
+    text-align: center;
+    border-collapse: collapse;
+   margin-bottom: 10px;
+}
+
+th,td{
+    border: 1px solid darkslategray;
+    padding: 15px;
+}
+th{
+    font-size: 20px;
+}
+tr:nth-child(odd){
+    background-color: rgb(174, 170, 170);
+   
+}
+
+tr:nth-child(even){
+
+    background-color: rgb(249, 249, 249);
+   
+}
+
+tr:nth-child(odd):not(:first-child){
+    background-color: rgb(211, 211, 202);
+}
+
+.logo{
+    box-sizing: border-box;
+    height: 50px;
+    text-align: center;
+}
+
+.nordeus{
+    background-color: #E7482A;
+}
+
+.nvidia {
+    background-color: black;
+}
+
+.microsoft {
+    background-color: #575352;
+}
+
+.facebook {
+    background-color: #3B5998;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.logo img:hover{
+    border-left: 1px dotted white;
+    border-right: 1px dotted white;
+}

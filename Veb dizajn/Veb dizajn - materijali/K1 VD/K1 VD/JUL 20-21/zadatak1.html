@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="zadatak1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12" id="header">
+                Agencija za nekretnine
+            </div>
+        </div>
+
+        <div class="row" id="divslika">
+            <div class="col-sm12 col-md-4" style="margin-top: 10px;">
+
+                <img src="slika1.jpg" alt="Slika1">
+
+                <div class="slikaopis">
+                    <h4 style="font-weight: bold;">LUX stan u Beogradu</h4>
+                    <h6>Predivan pogled.</h6>
+                </div>
+
+            </div>
+            <div class="col-sm12 col-md-4" style="margin-top: 10px;">
+                <img src="slika2.jpg" alt="Slika2">
+                <div class="slikaopis">
+                    <h4 style="font-weight: bold;">LUX stanovi u Novom Sadu</h4>
+                    <h6>Najnovija tehnologija gradnje.</h6>
+                </div>
+            </div>
+            <div class="col-sm12 col-md-4" style="margin-top: 10px;">
+                <img src="slika3.jpg" alt="Slika3">
+                <div class="slikaopis">
+                    <h4 style="font-weight: bold;">LUX stan u Nisu</h4>
+                    <h6>U samom centru grada.</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 15px; margin-bottom: 15px;">
+            <div class="col-sm-12" style="background-color: orange; text-align: center;">
+                Proverena agencija za nekretnine, sa hiljadama zadovoljnih kupaca.
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-0 col-md-4" style="background-color: white;">
+            </div>
+            <div class="col-sm-12 col-md-4">
+
+                <table class="table table-striped">
+                    <tr>
+                        <td>Ime: </td>
+                        <td><input type="text" style="width: 235px; text-align: right;"></td>
+                    </tr>
+                    <tr>
+                        <td>Prezime: </td>
+                        <td><input type="text" style="width: 235px; text-align: right;"></td>
+                    </tr>
+                    <tr>
+                        <td>Grad: </td>
+                        <td><select name="gradovi">
+                            <option>Beograd</option>
+                            <option>Novi Sad</option>
+                            <option>Nis</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Vrsta nekretnine: </td>
+                        <td> <input type="radio" name="izbor">Kuca <input type="radio" name="izbor"> Stan</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;"> <button class="btn btn-warning dugme" style="font-weight: bold;">Trazi</button> </td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="col-sm-0 col-md-4" style="background-color: white;">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

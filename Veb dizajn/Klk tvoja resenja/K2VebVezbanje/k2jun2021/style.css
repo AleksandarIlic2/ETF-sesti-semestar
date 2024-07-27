@@ -1,0 +1,11 @@
+#tabela {
+    width: 600px;
+}
+
+td{ 
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 150px;
+    height: 150px;
+ 
+}

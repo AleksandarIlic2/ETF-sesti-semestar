@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="zadatak1.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" style ="margin-bottom:10px ;">
+             <div class ="col-sm-12">
+                 <nav class ="navbar navbar-expand-sm" style="background-color: lightgray;">
+                     <a href ="#" class="navbar-brand" style="width: 30%;">
+                         <img src ="slika1.png" alt ="spageti" style="width:80%">
+                     </a>
+                     
+                     <h4 class="d-flex justify-content-start" style="width: 100%;">Aerodrom Nikola Tesla</h1>
+                     <a href ="#" class="navbar-nav justify-content-end">
+                         <img src ="slika2.png" alt ="spageti" style="width:15%">
+                     </a>
+ 
+                 </nav>
+                 
+            </div>
+
+            <div class="row" style="margin-top: 5px;">
+                <div class="col-sm-6 col-lg-3">
+                    <button class="btn btn-success" style="width: 107%;text-align: center">Rezervisi let</button>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <button class="btn btn-danger" style="width: 107%;text-align: center">Jeftine karte</button>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <button class="btn btn-warning" style="width: 107%; text-align: center;">Nove destinacije</button>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <button class="btn btn-info" style="width: 107%;text-align: center">Kontakt</button>
+                </div>
+            </div>
+            
+            <div class="row" style="margin-top: 5px;">
+                <div class="col-12-sm">
+                    <div class="progress">
+                        <div class ="progress-bar" style="width: 50%;">50%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 10px;">
+
+                <div class="col-sm-12">
+
+                    <h1 style="color:green; text-align: center; text-decoration: underline;">Popunite potrebne podatke</h1>
+
+                </div>
+
+                <table class="moja-tabela">
+                    <tr>
+                        <td>
+                            <label for="ime">Ime:</label>
+                        </td>
+                        <td>
+                            <input type ="text" name="ime">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="prezime">Prezime:</label>
+                        </td>
+                        <td>
+                            <input type ="text" name="prezime">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="placanje">Nacin placanja:</label>
+                        </td>
+                        <td>
+                            <select name="placanje" size="1">
+                                <option>Kaka</option>
+                                <option>Prda</option>
+                                <option>Smrda</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="potvrda">Prihvatam uslove koriscenja:</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="potvrda">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style ="width: 200%;" class="d-flex justify-content-center">
+                            <button class="btn btn-success moje-dugme" onclick="window.location.href='zadatak2.html'">Sacuvaj</button>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        
+
+ 
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+Prvo predavanje:
+Veze: 1 - 1 od tacke A do B
+N - 1 - mozes da primas poruke od koga kod hoces
+1 - N - mozes da saljes na vise razlicith mesta
+N - N - bilo ko bilo kome
+
+Kanali ili sanducici u jako slicna stvar,
+razlika je u skupu dostupnih metoda
+
+ch(type1 id1, .., typen idn) - kanali sa definisanim tipovima podataka
+Kanal izgleda  kao deljena promenljiva ali nije, samo je logicki isti kanal a fizicki na jednom racunaru jedan objekat a na drugom drugi objekat
+
+Asinhrona: send i receive, send je asinhrona a receive je blokirajuca
+send - ubaci poruku u komunikacioni kanal
+receive - izvuci podatak iz komunikacionog kanala
+
+empty(c) - retko je koristimo da se gvirne da li postoji nesto u kanalu
+Poredjenje a semaforom: wait i receive lici, signal i send
+Nije pozeljno da vise procesa CITA iz istog postanskog sanducica
+Filterski proces - jedan ili vise ulaznih kanala i jedan ili vise izlaznih kanala
+Cvorovi imaju jedan ili vise ulaza i izlaza
+, ulaz moze da bude jedan a izlaz npr obradjen ulaz, a moze i samo ulaz
+Filterski procesi - cesto neka while(true) petlja, to se odnosi na serverske procese
+Pipeline obrada - procesi vezani u red jedan za drugim
+Predikat - kaze sta treba uraditi, recimo 
+Predikat: za svako i: 1<= i< n sent[i] <= sent[i + 1]
+Broj podataka moze biti poznat unapred, ili recimo onaj koji zadaje posao moze da nam posalje podatak (primer prvo posalje n pa onda svih n elemenata redom) ili da postoji specijalni karakter za kraj kao sto je EOS
+Filterski procesi SMEJU da bufferuju podatke pre nego sto ih proslede, ali ideja je da se STO manje podataka cuva (ne moras primiti ceo niz odjednom pa ga sortirati)
+Ako recimo cvor dobije broj koji ima, moze da ga ne prosledi (ako ces da se ne salju duplikati), ili mozes ako imas 10 broja 6 da ne sacuvas svih 10 sestica nego zapamti da ih ima 10 - to u zadacima gde si ogranicen koliko mozes da sacuvas
+moze da se posalje topologija mreze u poruci da bi se brze slalo, ako se isplati
+
+Sortiranje: Ako je niz veliki, verovatno nam treba vise procesa, da niz podelimo na vise delova, sortiramo svaki od nizova pa se na kraju oni usortiraju (stapanje ulanih nizova, od 2 ulaznih kanala dajemo 1 izlaz)
+
+broj ulaza je najcesce stepen broja 2 u odnosu na izlaz (2 ulaza 1 izlaz)
+
+Na ulazu garantujemo da je niz sortiran uvek! (u prvom nivou dobijes niz od jednog elementa, znas da je sortiran)
+Nije dobro ni element po element - ne isplati se 
+Pozeljno je imati isti kod za sve cvorove! (ili da su cvorovi iste strukture) - ali ne mora na pocetnom nivou kada se primaju podaci (ulazni stepen) i na zavrsnom nivou da se napravi razlika (izlazni stepen) - u svakom slucaju je pozeljno da budu isti
+
+
+in1, in2, out
+
+int vrednost1 = receive(in1)
+int vrednost2 = receive(in2)
+while (vrednost1 != EOS and vrednost2 != EOS):
+	if (vrednost1 < vrednost2) 
+		send out(vrednost1)
+		vrednost1 = receive(in1) - ne salji odmah vrednost2 jer je mozda naredni vrednost1 manji od vrednost2
+	else if (vrednost2 < vrednost1) 
+		send out(vrednost2)
+		vrednost2 = receive(in2)
+
+if (vrenodst1 == EOS)
+	while(vrednost2 != EOS)
+		send out(vrednost2)
+else if (vrednost2 == EOS)
+	while(vrednost1 != EOS)
+		send out(vrednost1)
+
+send out(EOS) - OBAVEZNO EOS! Zavrseno slanje nase sekvence, mogla je biti i while true petlja da se sortira vise nizova u cvoru, EOS ti niko ne brani da koristis i na neki drugaciji nacin, ne mora bukvalno da oznacava kraj slanja sekvence
+Da je trazeno da se izbace duplikati, koristio bi dodatnu promenljivu last koja kaze sta si poslednje poslao, i kad primis novu pitaj da li je ista kao last, ako jeste ne salji je samo preuzmi novu vrednost - kontam da bi to uslo u ovo if i else if unutar while petlje
+in1, in2, out smo dobili kroz potpis metode(konstruktore), onaj ko bude radio povezivanje - koristi :
+staticko povezivanje - na osnovu ID se recimo odlucuje da za id = 10 uzme kanal 20, 21
+dinamicko imenovanje - na osnovu atributa daj mi postansko sanduce koja odgovara nekoj osobi, dakle dobijes i napravis kontakt sa nekim, kad si kreirao kontakt onda komunicirate staticky
+
+Sortiranje pipeline algoritmom ili ti nizom (jedan ulaz - jedan izlaz): Svaki cvor prima element i buferuje 1 element, primi sledeci i kaze ako je ovaj manji od onog sto sam baferovao posalji njega, ako nije posalji buferovan i tako svi rade
+
+Klijent server arhitektura:
+
+klijent uputi zahtev serveru i server odradi posao (kod filterskih svih procesi rade posao, ovde SERVER radi posao za nas)
+server ima svoj kanal za prijem zahteva, ima request i reply
+
+Ko upucuje zahtev serveru mora pored vrednosti i da se predstavi serveru (ClientID)
+
+Svaki klijent ima kanal preko koga dobija odgovor
+
+Serverski proces - prima zahtev, obradi zahtev, posalji odgovor u beskonacnoj petlji!
+
+
+
+

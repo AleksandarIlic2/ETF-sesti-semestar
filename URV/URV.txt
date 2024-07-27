@@ -1,0 +1,21 @@
+Data block je organizaciona jedinica memorije. I, Q, M su odvojeni.
+Bit ili Bool(M2.0), Byte(MB2), Word(MW2), DWord(MD2), respektivno uzimaju 1, 8 16, 32 bitova.
+Numericki tipovi - sint(8b), USINT(8b), INT(16), UINT(16), DINT(), UDINT(), REAL(32)
+LREAL, LINT, ULINT.
+
+TIMETYPES
+TIME 32 (T#2h46min30sec630ms)
+DATE 16(D#1995-01-21).
+TIME_OF_DAY 32 TOD#18:15:18:998
+LTIME
+LTIME_OF_DAY 64
+LDT (DATE _and_LTIME) #LDT 2008_10_25_08:11:42:314
+CHAR TYPE
+CHAR(8b) B 'R'
+WCHAR(16b) WCHAR #'W'
+
+Funckije FC (nemaju sopstvene podatke)
+Funckije blokovi FB(imaju svoje podatke _static)
+Data blokovi DB(blokovi podataka)
+OB1 main
+OB100 startup OB izvrsava se samo PRVI PUT!
